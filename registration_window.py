@@ -2,7 +2,7 @@
 Name: Ahmed Affaan
 Title: registration_window.py
 Folder: -
-Date: -
+Date: 28/02/2023
 Country: Republic of Maldives
 Code version: -
 Description: Login window for P2P payment application.
