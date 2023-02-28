@@ -91,4 +91,9 @@ def validate_bank_name_combobox():
     # Placeholder.
     pass
 
+# This function displays error popup if user selects currency other than MVR.
+def validate_bank_currency_combobox():
+    # Placeholder.
+    pass
+
 # PROGRAM END.
