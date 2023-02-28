@@ -86,4 +86,9 @@ def validate_user_nationality_combobox():
     # Placeholder.
     pass
 
+# This function displays error popup if user selects bank other than Bank of Maldives.
+def validate_bank_name_combobox():
+    # Placeholder.
+    pass
+
 # PROGRAM END.
