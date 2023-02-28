@@ -96,4 +96,13 @@ def validate_bank_currency_combobox():
     # Placeholder.
     pass
 
+# Registration window configurations.
+registration_window = CTk()
+registration_window.title("Registration") # Window title.
+registration_window.geometry("800x608") # Window dimensions.
+#registration_window.resizable(False, False) # Maintaining constant window dimensions.
+
+# Running the registration_window event loop.
+registration_window.mainloop()
+
 # PROGRAM END.
