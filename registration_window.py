@@ -28,7 +28,7 @@ title_names = ["", "Mr.", "Mrs.", "Miss.", "Ms.", "Mx.", "Sir.", "Dame.", "Dr.",
 # List of numbers 01-100 to select users age (user_information_frame).
 age_values = [str(i).zfill(2) for i in range(0, 101)]
 
-# List of countries of the United Nations.
+# List of countries of the United Nations (user_information_frame).
 country_names_UN = [country.name for country in pycountry.countries]
 
 # List of banks operating in the Maldives and some of in the UK.
