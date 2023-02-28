@@ -148,6 +148,16 @@ registration_user_name_label.grid(row=2, column=2, padx=10, pady=5)
 registration_user_name_entry = CTkEntry(user_information_frame)
 registration_user_name_entry.grid(row=3, column=2, padx=10, pady=5)
 
+# Configurations to center registration window on initial run.
+registration_window.update() # Refreshes the window.
+registration_window_width = registration_window.winfo_width() # Retrieves the window width.
+registration_window_height = registration_window.winfo_height() # Retrieves the window height.
+screen_width = registration_window.winfo_screenwidth() # Retrieves the screen width.
+screen_height = registration_window.winfo_screenheight() # Retrieves the screen height.
+x_axis = int((screen_width / 2) - (registration_window_width / 2)) # Calculates x-axis.
+y_axis = int((screen_height / 2) - (registration_window_height / 2)) # Calculates y-axis.
+registration_window.geometry(f"{registration_window_width}x{registration_window_height}+{x_axis}+{y_axis}") # Sets the window size to any screen center.
+
 # Running the registration_window event loop.
 registration_window.mainloop()
 
