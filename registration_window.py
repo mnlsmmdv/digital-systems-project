@@ -31,4 +31,13 @@ age_values = [str(i).zfill(2) for i in range(0, 101)]
 # List of countries of the United Nations.
 country_names_UN = [country.name for country in pycountry.countries]
 
+# List of banks operating in the Maldives and some of in the UK.
+maldives_uk_bank_names = [
+    "", "Bank of Maldives", "Maldives Islamic Bank", "State Bank of India",
+    "Habib Bank Limited", "MCB Bank Limited", "Islamic Development Bank", 
+    "Abu Dhabi Islamic Bank", "HDFC Bank", "HSBC Bank", "Barclays Bank",
+    "Lloyds Bank", "NatWest Bank", "Santander UK", "Nationwide Building Society",
+    "TSB Bank", "Royal Bank of Scotland (RBS)", "Halifax", "Bank of Scotland"
+]
+
 # PROGRAM END.
