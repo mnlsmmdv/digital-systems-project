@@ -28,4 +28,7 @@ title_names = ["", "Mr.", "Mrs.", "Miss.", "Ms.", "Mx.", "Sir.", "Dame.", "Dr.",
 # List of numbers 01-100 to select users age.
 age_values = [str(i).zfill(2) for i in range(0, 101)]
 
+# List of countries of the United Nations.
+country_names_UN = [country.name for country in pycountry.countries]
+
 # PROGRAM END.
