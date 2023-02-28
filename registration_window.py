@@ -25,7 +25,7 @@ import subprocess
 # List of titles for names according to gender (user_information_frame).
 title_names = ["", "Mr.", "Mrs.", "Miss.", "Ms.", "Mx.", "Sir.", "Dame.", "Dr.", "Prof.", "Cllr.", "Lady." "Lord."]
 
-# List of numbers 01-100 to select users age.
+# List of numbers 01-100 to select users age (user_information_frame).
 age_values = [str(i).zfill(2) for i in range(0, 101)]
 
 # List of countries of the United Nations.
