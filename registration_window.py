@@ -126,6 +126,7 @@ last_name_entry.grid(row=1, column=1, padx=10, pady=5)
 name_title = CTkLabel(user_information_frame, text="Title")
 name_title.grid(row=0, column=2, padx=10, pady=5)
 name_title_combobox = CTkComboBox(user_information_frame, values=title_names)
+name_title_combobox.set("")
 name_title_combobox.grid(row=1, column=2, padx=10, pady=5)
 
 # Age label and combobox (user_information_frame).
