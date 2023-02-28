@@ -106,6 +106,10 @@ registration_window.geometry("800x608") # Window dimensions.
 user_registration_frame = CTkFrame(registration_window)
 user_registration_frame.pack(pady=60)
 
+# Frame for saving user information.
+user_information_frame = CTkFrame(user_registration_frame)
+user_information_frame.grid(row=0, column=0, sticky="news", padx=20, pady=20)
+
 # Running the registration_window event loop.
 registration_window.mainloop()
 
