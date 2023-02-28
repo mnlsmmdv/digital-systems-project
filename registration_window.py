@@ -149,6 +149,10 @@ registration_user_name_label.grid(row=2, column=2, padx=10, pady=5)
 registration_user_name_entry = CTkEntry(user_information_frame)
 registration_user_name_entry.grid(row=3, column=2, padx=10, pady=5)
 
+# Frame for saving user bank information.
+bank_information_frame = CTkFrame(user_registration_frame)
+bank_information_frame.grid(row=1, column=0, sticky="news", padx=20, pady=10)
+
 # Configurations to center registration window on initial run.
 registration_window.update() # Refreshes the window.
 registration_window_width = registration_window.winfo_width() # Retrieves the window width.
