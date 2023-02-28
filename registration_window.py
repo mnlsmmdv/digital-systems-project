@@ -71,4 +71,9 @@ def validate_user_registration():
     # Placeholder.
     pass
 
+# This function cancels user registration and goes back to login_window .
+def cancel_user_registration():
+    # Placeholder.
+    pass
+
 # PROGRAM END.
