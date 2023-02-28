@@ -128,6 +128,13 @@ name_title.grid(row=0, column=2, padx=10, pady=5)
 name_title_combobox = CTkComboBox(user_information_frame, values=title_names)
 name_title_combobox.grid(row=1, column=2, padx=10, pady=5)
 
+# Age label and combobox.
+user_age_label = CTkLabel(user_information_frame, text="Age")
+user_age_label.grid(row=2, column=0, padx=10, pady=5)
+user_age_combobox = CTkComboBox(user_information_frame, values=age_values)
+user_age_combobox.set("")
+user_age_combobox.grid(row=3, column=0, padx=10, pady=5)
+
 # Running the registration_window event loop.
 registration_window.mainloop()
 
