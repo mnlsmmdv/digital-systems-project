@@ -110,6 +110,12 @@ user_registration_frame.pack(pady=60)
 user_information_frame = CTkFrame(user_registration_frame)
 user_information_frame.grid(row=0, column=0, sticky="news", padx=20, pady=20)
 
+# First Name label and entry (user_information_frame).
+first_name_label = CTkLabel(user_information_frame, text="First Name")
+first_name_label.grid(row=0, column=0)
+first_name_entry = CTkEntry(user_information_frame)
+first_name_entry.grid(row=1, column=0, padx=10, pady=5)
+
 # Running the registration_window event loop.
 registration_window.mainloop()
 
