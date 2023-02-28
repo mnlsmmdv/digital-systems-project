@@ -102,6 +102,10 @@ registration_window.title("Registration") # Window title.
 registration_window.geometry("800x608") # Window dimensions.
 #registration_window.resizable(False, False) # Maintaining constant window dimensions.
 
+# Registration window frame configurations.
+user_registration_frame = CTkFrame(registration_window)
+user_registration_frame.pack(pady=60)
+
 # Running the registration_window event loop.
 registration_window.mainloop()
 
