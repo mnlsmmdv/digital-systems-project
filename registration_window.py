@@ -142,6 +142,12 @@ user_nationality_combobox = CTkComboBox(user_information_frame, values=country_n
 user_nationality_combobox.set("")
 user_nationality_combobox.grid(row=3, column=1, padx=10, pady=5)
 
+# Username label and entry (user_information_frame).
+registration_user_name_label = CTkLabel(user_information_frame, text="Username")
+registration_user_name_label.grid(row=2, column=2, padx=10, pady=5)
+registration_user_name_entry = CTkEntry(user_information_frame)
+registration_user_name_entry.grid(row=3, column=2, padx=10, pady=5)
+
 # Running the registration_window event loop.
 registration_window.mainloop()
 
