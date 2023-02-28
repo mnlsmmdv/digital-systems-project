@@ -163,6 +163,7 @@ user_bank_status_checkbox.grid(row=1, column=0, padx=10, pady=5)
 user_bank_name_label = CTkLabel(bank_information_frame, text="Bank Name")
 user_bank_name_label.grid(row=0, column=1, padx=10, pady=5)
 user_bank_name_combobox = CTkComboBox(bank_information_frame, values=maldives_uk_bank_names)
+user_bank_name_combobox.set("")
 user_bank_name_combobox.grid(row=1, column=1, padx=10, pady=5)
 
 # Configurations to center registration window on initial run.
