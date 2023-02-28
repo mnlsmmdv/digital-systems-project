@@ -22,4 +22,7 @@ import webbrowser
 import os
 import subprocess
 
+# List of titles for names according to gender.
+title_names = ["", "Mr.", "Mrs.", "Miss.", "Ms.", "Mx.", "Sir.", "Dame.", "Dr.", "Prof.", "Cllr.", "Lady." "Lord."]
+
 # PROGRAM END.
