@@ -76,4 +76,9 @@ def cancel_user_registration():
     # Placeholder.
     pass
 
+# This function displays error popup if user selects age below 18 years old.
+def validate_age_combobox():
+    # Placeholder.
+    pass
+
 # PROGRAM END.
