@@ -153,6 +153,12 @@ registration_user_name_entry.grid(row=3, column=2, padx=10, pady=5)
 bank_information_frame = CTkFrame(user_registration_frame)
 bank_information_frame.grid(row=1, column=0, sticky="news", padx=20, pady=10)
 
+# Bank account status label and checkbox (bank_information_frame).
+user_bank_status_label = CTkLabel(bank_information_frame, text="Account Status")
+user_bank_status_label.grid(row=0, column=0, padx=10, pady=5)
+user_bank_status_checkbox = CTkCheckBox(bank_information_frame, text="Account Active")
+user_bank_status_checkbox.grid(row=1, column=0, padx=10, pady=5)
+
 # Configurations to center registration window on initial run.
 registration_window.update() # Refreshes the window.
 registration_window_width = registration_window.winfo_width() # Retrieves the window width.
