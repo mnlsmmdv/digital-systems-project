@@ -116,6 +116,12 @@ first_name_label.grid(row=0, column=0)
 first_name_entry = CTkEntry(user_information_frame)
 first_name_entry.grid(row=1, column=0, padx=10, pady=5)
 
+# Last Name label and entry (user_information_frame).
+last_name_label = CTkLabel(user_information_frame, text="Last Name")
+last_name_label.grid(row=0, column=1)
+last_name_entry = CTkEntry(user_information_frame)
+last_name_entry.grid(row=1, column=1, padx=10, pady=5)
+
 # Running the registration_window event loop.
 registration_window.mainloop()
 
