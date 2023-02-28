@@ -81,4 +81,9 @@ def validate_age_combobox():
     # Placeholder.
     pass
 
+# This function displays error popup if user selects country other than Maldives.
+def validate_user_nationality_combobox():
+    # Placeholder.
+    pass
+
 # PROGRAM END.
