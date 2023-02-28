@@ -22,7 +22,7 @@ import webbrowser
 import os
 import subprocess
 
-# List of titles for names according to gender.
+# List of titles for names according to gender (user_information_frame).
 title_names = ["", "Mr.", "Mrs.", "Miss.", "Ms.", "Mx.", "Sir.", "Dame.", "Dr.", "Prof.", "Cllr.", "Lady." "Lord."]
 
 # List of numbers 01-100 to select users age.
