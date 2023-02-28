@@ -40,4 +40,7 @@ maldives_uk_bank_names = [
     "TSB Bank", "Royal Bank of Scotland (RBS)", "Halifax", "Bank of Scotland"
 ]
 
+# List of currencies worldwide.
+maldives__bank_currencies = [currency.alpha_3 for currency in pycountry.currencies]
+
 # PROGRAM END.
