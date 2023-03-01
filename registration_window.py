@@ -80,6 +80,8 @@ def cancel_user_registration():
 def validate_age_combobox(event):
     # Converting string to an integer.
     user_age = int(user_age_combobox.get())
+
+    # Displays error message if selection is less than 18 years old.
     if user_age < 18:
         # Error message.
         CTkMessagebox(title="Unauthorised Selection", message="Must be 18 or higher!", icon="cancel", option_1="Ok")
