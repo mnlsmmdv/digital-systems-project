@@ -185,6 +185,10 @@ terms_conditions_text_area.insert(END, terms_conditions_text)
 terms_conditions_text_area.configure(state=DISABLED)
 terms_conditions_text_area.grid(row=1, column=0, sticky="news", padx=10, pady=5)
 
+# Terms and conditions status label and checkbox (terms_conditions_frame).
+terms_conditions_status = CTkCheckBox(terms_conditions_frame, text="I accept the terms and conditions")
+terms_conditions_status.grid(row=3, column=0, padx=10, pady=5)
+
 # Configurations to center registration window on initial run.
 registration_window.update() # Refreshes the window.
 registration_window_width = registration_window.winfo_width() # Retrieves the window width.
