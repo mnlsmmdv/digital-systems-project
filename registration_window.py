@@ -220,7 +220,7 @@ terms_conditions_status = CTkCheckBox(terms_conditions_frame, text="I accept the
 terms_conditions_status.grid(row=3, column=0, padx=10, pady=5)
 
 # Register user button (user_registration_frame).
-register_user_button = CTkButton(user_registration_frame, text="Register User")
+register_user_button = CTkButton(user_registration_frame, text="Register User", command=validate_user_registration)
 register_user_button.grid(row=3, column=0, padx=10, pady=10)
 
 # Cancel registration button (user_registration_frame).
