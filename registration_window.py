@@ -96,8 +96,10 @@ def validate_user_nationality_combobox(event):
 
 # This function displays error popup if user selects bank other than Bank of Maldives.
 def validate_bank_name_combobox():
-    # Placeholder.
-    pass
+    # Displays error if selection is not Bank of Maldives.
+    if user_bank_name_combobox.get() != "Bank of Maldives":
+        CTkMessagebox(title="Unauthorised Selection", message="Can select Bank of Maldives only!", icon="cancel", option_1="Ok")
+        user_bank_name_combobox.set("")
 
 # This function displays error popup if user selects currency other than MVR.
 def validate_bank_currency_combobox():
