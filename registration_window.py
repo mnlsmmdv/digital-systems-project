@@ -78,8 +78,12 @@ def cancel_user_registration():
 
 # This function displays error popup if user selects age below 18 years old.
 def validate_age_combobox():
-    # Placeholder.
-    pass
+    # Converting string to an integer.
+    user_age = int(user_age_combobox.get())
+    if user_age < 18:
+        # Error message.
+        CTkMessagebox(title="Unauthorised Selection", message="Must be 18 or higher!", icon="cancel", option_1="Ok")
+        user_age_combobox.current(0)
 
 # This function displays error popup if user selects country other than Maldives.
 def validate_user_nationality_combobox():
