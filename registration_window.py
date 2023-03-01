@@ -91,6 +91,7 @@ def validate_age_combobox(event):
 def validate_user_nationality_combobox(event):
     # Displays error if selection is not Maldives.
     if user_nationality_combobox.get() != "Maldives":
+        # Error message.
         CTkMessagebox(title="Unauthorised Selection", message="Can select Maldives only!", icon="cancel", option_1="Ok")
         user_nationality_combobox.set("")
 
