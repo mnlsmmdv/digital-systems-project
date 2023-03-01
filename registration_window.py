@@ -104,9 +104,12 @@ def validate_bank_name_combobox(event):
         user_bank_name_combobox.set("")
 
 # This function displays error popup if user selects currency other than MVR.
-def validate_bank_currency_combobox():
-    # Placeholder.
-    pass
+def validate_bank_currency_combobox(event):
+    # Displays error if selection is not MVR or USD.
+    if user_bank_currency_combobox.get() not in ["USD", "MVR"]:
+        # Error message.
+        CTkMessagebox(title="Unauthorised Selection", message="Can select MVR or USD only only!", icon="cancel", option_1="Ok")
+        user_bank_currency_combobox.set("")
 
 # Registration window configurations.
 registration_window = CTk()
