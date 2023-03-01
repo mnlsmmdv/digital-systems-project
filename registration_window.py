@@ -88,9 +88,11 @@ def validate_age_combobox(event):
         user_age_combobox.set("")
 
 # This function displays error popup if user selects country other than Maldives.
-def validate_user_nationality_combobox():
-    # Placeholder.
-    pass
+def validate_user_nationality_combobox(event):
+    # Displays error if selection is not Maldives.
+    if user_nationality_combobox.get() != "Maldives":
+        CTkMessagebox(title="Unauthorised Selection", message="Can select Maldives only!", icon="cancel", option_1="Ok")
+        user_nationality_combobox.set("")
 
 # This function displays error popup if user selects bank other than Bank of Maldives.
 def validate_bank_name_combobox():
