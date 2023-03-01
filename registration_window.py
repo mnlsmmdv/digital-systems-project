@@ -98,6 +98,7 @@ def validate_user_nationality_combobox(event):
 def validate_bank_name_combobox():
     # Displays error if selection is not Bank of Maldives.
     if user_bank_name_combobox.get() != "Bank of Maldives":
+        # Error message.
         CTkMessagebox(title="Unauthorised Selection", message="Can select Bank of Maldives only!", icon="cancel", option_1="Ok")
         user_bank_name_combobox.set("")
 
