@@ -179,6 +179,12 @@ terms_conditions_frame.grid(row=2, column=0, sticky="news", padx=20, pady=10)
 terms_conditions_frame.columnconfigure(0, weight=1)
 terms_conditions_frame.rowconfigure(0, weight=1)
 
+# Terms and conditions text area (terms_conditions_frame).
+terms_conditions_text_area = CTkTextbox(terms_conditions_frame, width=75, height=200, wrap="none")
+terms_conditions_text_area.insert(END, terms_conditions_text)
+terms_conditions_text_area.configure(state=DISABLED)
+terms_conditions_text_area.grid(row=1, column=0, sticky="news", padx=10, pady=5)
+
 # Configurations to center registration window on initial run.
 registration_window.update() # Refreshes the window.
 registration_window_width = registration_window.winfo_width() # Retrieves the window width.
