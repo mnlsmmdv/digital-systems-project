@@ -136,9 +136,10 @@ name_title_combobox.grid(row=1, column=2, padx=10, pady=5)
 # Age label and combobox (user_information_frame).
 user_age_label = CTkLabel(user_information_frame, text="Age")
 user_age_label.grid(row=2, column=0, padx=10, pady=5)
-user_age_combobox = CTkComboBox(user_information_frame, values=age_values)
+user_age_combobox = CTkComboBox(user_information_frame, values=age_values, command=validate_age_combobox)
 user_age_combobox.set("")
 user_age_combobox.grid(row=3, column=0, padx=10, pady=5)
+user_age_combobox.bind("<<ComboboxSelected>>", validate_age_combobox)
 
 # Nationality label and combobox (user_information_frame).
 user_nationality_label = CTkLabel(user_information_frame, text="Nationality")
