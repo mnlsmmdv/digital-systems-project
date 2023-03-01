@@ -27,4 +27,14 @@ from tkinter import filedialog
 set_appearance_mode("system")
 set_default_color_theme("blue")
 
+# Login Window configurations.
+global login_window
+login_window = CTk()
+login_window.title("Login") # Window title.
+login_window.geometry("800x608") # Window dimensions.
+#login_window.resizable(False, False) # Keeping constant window dimension size.
+
+# Running the main window event loop.
+login_window.mainloop()
+
 # PROGRAM END.
