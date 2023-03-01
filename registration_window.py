@@ -192,7 +192,6 @@ user_bank_currency_combobox.set("")
 user_bank_currency_combobox.grid(row=1, column=2, padx=10, pady=5)
 user_bank_currency_combobox.bind("<<ComboboxSelected>>", validate_bank_currency_combobox)
 
-
 # Frame for Terms and Conditions (T&C).
 terms_conditions_frame = CTkFrame(user_registration_frame)
 terms_conditions_frame.grid(row=2, column=0, sticky="news", padx=20, pady=10)
