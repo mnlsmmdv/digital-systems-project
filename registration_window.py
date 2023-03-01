@@ -166,6 +166,13 @@ user_bank_name_combobox = CTkComboBox(bank_information_frame, values=maldives_uk
 user_bank_name_combobox.set("")
 user_bank_name_combobox.grid(row=1, column=1, padx=10, pady=5)
 
+# Bank account currency type and combobox (bank_information_frame).
+user_bank_currency_label = CTkLabel(bank_information_frame, text="Currency Type")
+user_bank_currency_label.grid(row=0, column=2, padx=10, pady=5)
+user_bank_currency_combobox = CTkComboBox(bank_information_frame, values=maldives__bank_currencies)
+user_bank_currency_combobox.set("")
+user_bank_currency_combobox.grid(row=1, column=2, padx=10, pady=5)
+
 # Configurations to center registration window on initial run.
 registration_window.update() # Refreshes the window.
 registration_window_width = registration_window.winfo_width() # Retrieves the window width.
