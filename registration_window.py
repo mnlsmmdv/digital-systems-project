@@ -187,9 +187,11 @@ user_bank_name_combobox.bind("<<ComboboxSelected>>", validate_bank_name_combobox
 # Bank account currency type and combobox (bank_information_frame).
 user_bank_currency_label = CTkLabel(bank_information_frame, text="Currency Type")
 user_bank_currency_label.grid(row=0, column=2, padx=10, pady=5)
-user_bank_currency_combobox = CTkComboBox(bank_information_frame, values=maldives_uk_bank_currencies)
+user_bank_currency_combobox = CTkComboBox(bank_information_frame, values=maldives_uk_bank_currencies, command=validate_bank_currency_combobox)
 user_bank_currency_combobox.set("")
 user_bank_currency_combobox.grid(row=1, column=2, padx=10, pady=5)
+user_bank_currency_combobox.bind("<<ComboboxSelected>>", validate_bank_currency_combobox)
+
 
 # Frame for Terms and Conditions (T&C).
 terms_conditions_frame = CTkFrame(user_registration_frame)
