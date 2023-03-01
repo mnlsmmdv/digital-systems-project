@@ -96,7 +96,7 @@ def validate_user_nationality_combobox(event):
         user_nationality_combobox.set("")
 
 # This function displays error popup if user selects bank other than Bank of Maldives.
-def validate_bank_name_combobox():
+def validate_bank_name_combobox(event):
     # Displays error if selection is not Bank of Maldives.
     if user_bank_name_combobox.get() != "Bank of Maldives":
         # Error message.
