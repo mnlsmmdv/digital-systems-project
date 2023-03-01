@@ -193,6 +193,10 @@ terms_conditions_status.grid(row=3, column=0, padx=10, pady=5)
 register_user_button = CTkButton(user_registration_frame, text="Register User")
 register_user_button.grid(row=3, column=0, padx=10, pady=10)
 
+# Cancel registration button (user_registration_frame).
+cancel_registration_button = CTkButton(user_registration_frame, text="Cancel")
+cancel_registration_button.grid(row=4, column=0, padx=10, pady=10)
+
 # Configurations to center registration window on initial run.
 registration_window.update() # Refreshes the window.
 registration_window_width = registration_window.winfo_width() # Retrieves the window width.
