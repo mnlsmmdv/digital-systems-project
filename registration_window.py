@@ -68,8 +68,17 @@ SOFTWARE."""
 
 # This function checks all fields have been filled.
 def validate_user_registration():
-    # Placeholder.
-    pass
+    # Checks if all required fields have been filled in.
+    if (len(first_name_entry.get()) > 0 and len(last_name_entry.get()) > 0 and
+            len(name_title_combobox.get()) > 0 and len(user_age_combobox.get()) > 0 and
+            len(user_nationality_combobox.get()) > 0 and len(registration_user_name_entry.get()) > 0 and
+            len(user_bank_name_combobox.get()) > 0 and len(user_bank_currency_combobox.get()) > 0 and
+            terms_conditions_status.get()):
+        # Displays success message if all required fields have been filled in.
+        CTkMessagebox(title="User Registered", message="Registered successfully!", icon="check", option_1="Ok")
+    else:
+        # Displays error message if any required fields are missing.
+        CTkMessagebox(title="Registration Error", message="Please fill in all required fields!", icon="warning", option_1="Ok")
 
 # This function cancels user registration and goes back to login_window .
 def cancel_user_registration():
