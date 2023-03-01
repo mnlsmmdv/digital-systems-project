@@ -77,7 +77,7 @@ def cancel_user_registration():
     pass
 
 # This function displays error popup if user selects age below 18 years old.
-def validate_age_combobox():
+def validate_age_combobox(event):
     # Converting string to an integer.
     user_age = int(user_age_combobox.get())
     if user_age < 18:
