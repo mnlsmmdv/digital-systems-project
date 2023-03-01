@@ -189,6 +189,10 @@ terms_conditions_text_area.grid(row=1, column=0, sticky="news", padx=10, pady=5)
 terms_conditions_status = CTkCheckBox(terms_conditions_frame, text="I accept the terms and conditions")
 terms_conditions_status.grid(row=3, column=0, padx=10, pady=5)
 
+# Register user button (user_registration_frame).
+register_user_button = CTkButton(user_registration_frame, text="Register User")
+register_user_button.grid(row=3, column=0, padx=10, pady=10)
+
 # Configurations to center registration window on initial run.
 registration_window.update() # Refreshes the window.
 registration_window_width = registration_window.winfo_width() # Retrieves the window width.
