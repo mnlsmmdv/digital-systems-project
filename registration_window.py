@@ -41,7 +41,7 @@ maldives_uk_bank_names = [
 ]
 
 # List of currencies worldwide.
-maldives__bank_currencies = [currency.alpha_3 for currency in pycountry.currencies]
+maldives_uk_bank_currencies = [currency.alpha_3 for currency in pycountry.currencies]
 
 # Terms and Conditions (T & C) text for the text area.
 terms_conditions_text = """MIT License
@@ -169,7 +169,7 @@ user_bank_name_combobox.grid(row=1, column=1, padx=10, pady=5)
 # Bank account currency type and combobox (bank_information_frame).
 user_bank_currency_label = CTkLabel(bank_information_frame, text="Currency Type")
 user_bank_currency_label.grid(row=0, column=2, padx=10, pady=5)
-user_bank_currency_combobox = CTkComboBox(bank_information_frame, values=maldives__bank_currencies)
+user_bank_currency_combobox = CTkComboBox(bank_information_frame, values=maldives_uk_bank_currencies)
 user_bank_currency_combobox.set("")
 user_bank_currency_combobox.grid(row=1, column=2, padx=10, pady=5)
 
