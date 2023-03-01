@@ -176,9 +176,10 @@ user_bank_status_checkbox.grid(row=1, column=0, padx=10, pady=5)
 # Bank name label and combobox (bank_information_frame).
 user_bank_name_label = CTkLabel(bank_information_frame, text="Bank Name")
 user_bank_name_label.grid(row=0, column=1, padx=10, pady=5)
-user_bank_name_combobox = CTkComboBox(bank_information_frame, values=maldives_uk_bank_names)
+user_bank_name_combobox = CTkComboBox(bank_information_frame, values=maldives_uk_bank_names, command=validate_bank_name_combobox)
 user_bank_name_combobox.set("")
 user_bank_name_combobox.grid(row=1, column=1, padx=10, pady=5)
+user_bank_name_combobox.bind("<<ComboboxSelected>>", validate_bank_name_combobox)
 
 # Bank account currency type and combobox (bank_information_frame).
 user_bank_currency_label = CTkLabel(bank_information_frame, text="Currency Type")
