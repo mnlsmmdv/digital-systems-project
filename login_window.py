@@ -23,4 +23,8 @@ from PIL import ImageTk, Image
 import os
 from tkinter import filedialog
 
+# Setting general appearence and UI colour theme.
+set_appearance_mode("system")
+set_default_color_theme("blue")
+
 # PROGRAM END.
