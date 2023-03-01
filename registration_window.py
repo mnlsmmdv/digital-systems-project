@@ -73,8 +73,10 @@ def validate_user_registration():
 
 # This function cancels user registration and goes back to login_window .
 def cancel_user_registration():
-    # Placeholder.
-    pass
+    # Closes the registration window.
+    registration_window.destroy()
+    # Opens the login window.
+    subprocess.run(["python", "login_window.py"])
 
 # This function displays error popup if user selects age below 18 years old.
 def validate_age_combobox(event):
