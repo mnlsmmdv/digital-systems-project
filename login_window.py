@@ -43,6 +43,10 @@ login_window_image_label.pack()
 login_window_frame = CTkFrame(login_window_image_label, width=320, height=360, corner_radius=15)
 login_window_frame.place(relx=0.5, rely=0.5, anchor=CENTER)
 
+# Login window header label (login_window_frame).
+login_window_header_label = CTkLabel(login_window_frame, text="To continue, log in", font=("SF Pro Display", 20))
+login_window_header_label.place(x=78, y=45)
+
 # Configurations to center login window window on initial run.
 login_window.update() # Refreshes the window.
 login_window_width = login_window.winfo_width() # Retrieves the window width.
