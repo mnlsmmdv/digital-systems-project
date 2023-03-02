@@ -34,6 +34,11 @@ login_window.title("Login") # Window title.
 login_window.geometry("800x608") # Window dimensions.
 #login_window.resizable(False, False) # Keeping constant window dimension size.
 
+# Login window background image.
+login_window_background_image = ImageTk.PhotoImage(Image.open("Images/login_background.jpg"))
+login_window_image_label = CTkLabel(login_window, text="Background Image", image=login_window_background_image)
+login_window_image_label.pack()
+
 # Configurations to center login window window on initial run.
 login_window.update() # Refreshes the window.
 login_window_width = login_window.winfo_width() # Retrieves the window width.
