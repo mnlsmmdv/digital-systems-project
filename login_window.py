@@ -73,6 +73,10 @@ register_button.place(x=50, y=240)
 login_button = CTkButton(login_window_frame, text="Login", width=100, corner_radius=6)
 login_button.place(x=170, y=240)
 
+# Login window Facebook button (login_window_frame).
+login_window_facebook_button = CTkButton(login_window_frame, text="Facebook", width=100, height=20, compound="left", fg_color='white', text_color='black', hover_color='#AFAFAF')
+login_window_facebook_button.place(x=50, y=290)
+
 # Configurations to center login window window on initial run.
 login_window.update() # Refreshes the window.
 login_window_width = login_window.winfo_width() # Retrieves the window width.
