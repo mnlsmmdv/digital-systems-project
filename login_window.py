@@ -51,6 +51,10 @@ login_window_header_label.place(x=75, y=45)
 login_window_username_entry = CTkEntry(login_window_frame, width=220, placeholder_text='Username')
 login_window_username_entry.place(x=50, y=110)
 
+# Login window Password entry (login_window_frame).
+login_window_password_entry = CTkEntry(login_window_frame, width=220, placeholder_text='Password', show="*")
+login_window_password_entry.place(x=50, y=165)
+
 # Configurations to center login window window on initial run.
 login_window.update() # Refreshes the window.
 login_window_width = login_window.winfo_width() # Retrieves the window width.
