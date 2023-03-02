@@ -63,6 +63,10 @@ login_window_forgot_password_label.place(x=170, y=195)
 register_button = CTkButton(login_window_frame, text="Register", width=100, corner_radius=6)
 register_button.place(x=50, y=240)
 
+# Login window Login button (login_window_frame).
+login_button = CTkButton(login_window_frame, text="Login", width=100, corner_radius=6)
+login_button.place(x=170, y=240)
+
 # Configurations to center login window window on initial run.
 login_window.update() # Refreshes the window.
 login_window_width = login_window.winfo_width() # Retrieves the window width.
