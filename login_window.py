@@ -27,6 +27,11 @@ from tkinter import filedialog
 set_appearance_mode("system")
 set_default_color_theme("blue")
 
+# Redirects user to different links on click.
+def login_direct_link():
+    # Placeholder.
+    pass
+
 # Login Window configurations.
 global login_window
 login_window = CTk()
