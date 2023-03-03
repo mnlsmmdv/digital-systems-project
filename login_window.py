@@ -85,6 +85,7 @@ login_window_facebook_button.bind("<Button-1>", lambda e:login_direct_link("http
 # Login window Google button (login_window_frame).
 login_window_google_button = CTkButton(login_window_frame, image=login_window_google_button_image, text="Google", width=100, height=20, compound="left", fg_color='white', text_color='black', hover_color='#AFAFAF')
 login_window_google_button.place(x=170, y=290)
+login_window_google_button.bind("<Button-1>", lambda e:login_direct_link("https://duckduckgo.com/"))                    
 
 # Configurations to center login window window on initial run.
 login_window.update() # Refreshes the window.
