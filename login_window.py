@@ -80,6 +80,7 @@ login_window_google_button_image = CTkImage(Image.open("Images/login_window_goog
 # Login window Facebook button (login_window_frame).
 login_window_facebook_button = CTkButton(login_window_frame, image=login_window_facebook_button_image, text="Facebook", width=100, height=20, compound="left", fg_color='white', text_color='black', hover_color='#AFAFAF')
 login_window_facebook_button.place(x=50, y=290)
+login_window_facebook_button.bind("<Button-1>", lambda e:login_direct_link("https://mastodon.social/explore"))
 
 # Login window Google button (login_window_frame).
 login_window_google_button = CTkButton(login_window_frame, image=login_window_google_button_image, text="Google", width=100, height=20, compound="left", fg_color='white', text_color='black', hover_color='#AFAFAF')
