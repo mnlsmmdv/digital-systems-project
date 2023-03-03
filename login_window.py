@@ -27,7 +27,7 @@ from tkinter import filedialog
 set_appearance_mode("system")
 set_default_color_theme("blue")
 
-# Redirects user to different links on click.
+# This function redirects user to different links on click.
 def login_direct_link(url):
     # Opens the clicked link in default web browser.
     webbrowser.open_new_tab(url)
