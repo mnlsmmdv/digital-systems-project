@@ -27,6 +27,14 @@ from tkinter import filedialog
 set_appearance_mode("system")
 set_default_color_theme("blue")
 
+# This function takes user if they wish to register as a customer.
+def open_registration_window():
+    # Closes login_window .
+    login_window.destroy()
+    # Opens registration_window .
+    filepath = os.path.join(os.getcwd(), "registration_window.py")
+    os.system(f'python "{filepath}"')
+
 # This function redirects user to different links on click.
 def login_direct_link(url):
     # Opens the clicked link in default web browser.
