@@ -73,8 +73,12 @@ register_button.place(x=50, y=240)
 login_button = CTkButton(login_window_frame, text="Login", width=100, corner_radius=6)
 login_button.place(x=170, y=240)
 
+# Images for Google and Facebook buttons.
+login_window_facebook_button_image = CTkImage(Image.open("Images/login_window_facebook_logo.png").resize((20,20), Image.ANTIALIAS))
+login_window_google_button_image = CTkImage(Image.open("Images/login_window_google_logo.webp").resize((20,20), Image.ANTIALIAS))
+
 # Login window Facebook button (login_window_frame).
-login_window_facebook_button = CTkButton(login_window_frame, text="Facebook", width=100, height=20, compound="left", fg_color='white', text_color='black', hover_color='#AFAFAF')
+login_window_facebook_button = CTkButton(login_window_frame, image=login_window_facebook_button_image, text="Facebook", width=100, height=20, compound="left", fg_color='white', text_color='black', hover_color='#AFAFAF')
 login_window_facebook_button.place(x=50, y=290)
 
 # Login window Google button (login_window_frame).
