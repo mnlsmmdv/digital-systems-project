@@ -74,7 +74,7 @@ login_window_forgot_password_label.place(x=170, y=195)
 login_window_forgot_password_label.bind("<Button-1>", lambda e:login_direct_link("https://www.youtube.com/watch?v=dQw4w9WgXcQ"))
 
 # Login window Register button (login_window_frame).
-register_button = CTkButton(login_window_frame, text="Register", width=100, corner_radius=6)
+register_button = CTkButton(login_window_frame, text="Register", width=100, corner_radius=6, command=open_registration_window)
 register_button.place(x=50, y=240)
 
 # Login window Login button (login_window_frame).
