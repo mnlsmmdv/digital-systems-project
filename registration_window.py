@@ -130,6 +130,11 @@ registration_window.title("Registration") # Window title.
 registration_window.geometry("800x608") # Window dimensions.
 #registration_window.resizable(False, False) # Maintaining constant window dimensions.
 
+# Displays background image for registration window.
+registration_window_background_image = ImageTk.PhotoImage(Image.open("Images/login_background.jpg"))
+registration_window_background_image_label = CTkLabel(registration_window, image=registration_window_background_image)
+registration_window_background_image_label.place(x=0, y=0, relwidth=1, relheight=1)
+
 # Registration window frame configurations.
 user_registration_frame = CTkFrame(registration_window)
 user_registration_frame.pack(pady=60)
