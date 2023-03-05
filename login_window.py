@@ -15,13 +15,14 @@ Note: Uncomment codes to execute and comment them when not in use.
 
 # Importing libraries.
 from tkinter import *
+from tkinter import filedialog
+from PIL import ImageTk, Image
 from customtkinter import *
 from CTkMessagebox import CTkMessagebox
 import pycountry
 import webbrowser
-from PIL import ImageTk, Image
 import os
-from tkinter import filedialog
+import subprocess
 
 # Setting general appearence and UI colour theme.
 set_appearance_mode("system")
