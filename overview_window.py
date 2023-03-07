@@ -28,4 +28,14 @@ import subprocess
 set_appearance_mode("system")
 set_default_color_theme("blue")
 
+# Overview Window configurations.
+global overview_window
+overview_window = CTk()
+overview_window.title("Overview") # Window title.
+overview_window.geometry("800x608") # Window dimensions.
+#overview_window.resizable(False, False) # Keeping constant window dimension size.
+
+# Running the main window event loop.
+overview_window.mainloop()
+
 # PROGRAM END.
