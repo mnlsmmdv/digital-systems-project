@@ -13,6 +13,15 @@ Note: Uncomment codes to execute and comment them when not in use.
 
 # PROGRAM START.
 
-
+# Importing libraries.
+from tkinter import *
+from tkinter import filedialog
+from PIL import ImageTk, Image
+from customtkinter import *
+from CTkMessagebox import CTkMessagebox
+import pycountry
+import webbrowser
+import os
+import subprocess
 
 # PROGRAM END.
