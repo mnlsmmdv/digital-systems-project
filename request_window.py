@@ -44,6 +44,10 @@ request_window_image_label.pack()
 request_window_frame = CTkFrame(request_window_image_label, width=320, height=330, corner_radius=15)
 request_window_frame.place(relx=0.5, rely=0.5, anchor=CENTER)
 
+# Request window header label (request_window_frame).
+login_window_header_label = CTkLabel(request_window_frame, text="Request, pending payment", font=("SF Pro Display", 20))
+login_window_header_label.place(x=38, y=45)
+
 # Configurations to center request_window on initial run.
 request_window.update() # Refreshes the window.
 request_window_width = request_window.winfo_width() # Retrieves the window width.
