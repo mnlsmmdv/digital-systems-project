@@ -82,7 +82,7 @@ request_button = CTkButton(request_window_frame, text="Request", width=70, corne
 request_button.place(x=50, y=255)
 button_zero = CTkButton(request_window_frame, text="0", width=70, corner_radius=6) # Button zero.
 button_zero.place(x=125, y=255)
-cancel_button = CTkButton(request_window_frame, text="Cancel", width=70, corner_radius=6) # Cancel button.
+cancel_button = CTkButton(request_window_frame, text="Cancel", width=70, corner_radius=6, command=cancel_user_request) # Cancel button.
 cancel_button.place(x=200, y=255)
 
 # Configurations to center request_window on initial run.
