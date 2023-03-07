@@ -64,7 +64,7 @@ request_window_header_label = CTkLabel(request_window_frame, text="Request, pend
 request_window_header_label.place(x=38, y=45)
 
 # Request window entry (request_window_frame).
-request_window_message_entry = CTkEntry(request_window_frame, placeholder_text="Message", border_color="", width=220, textvariable=request_entry_message)
+request_window_message_entry = CTkEntry(request_window_frame, border_color="", width=220, textvariable=request_entry_message)
 request_window_message_entry.place(x=50, y=100)
 
 # Request window buttons (request_window_frame).
