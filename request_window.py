@@ -30,8 +30,10 @@ set_default_color_theme("blue")
 
 # This function cancels user request and goes back to overview_window .
 def cancel_user_request():
-    # Placeholder.
-    pass
+    # Closes the request_window .
+    request_window.destroy()
+    # Opens the overview_window .
+    subprocess.run(["python", "overview_window.py"])
 
 # Request Window configurations.
 global request_window
