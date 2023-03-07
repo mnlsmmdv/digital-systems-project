@@ -35,6 +35,11 @@ request_window.title("Request") # Window title.
 request_window.geometry("800x608") # Window dimensions.
 #request_window.resizable(False, False) # Keeping constant window dimension size.
 
+# Request window background image.
+request_window_background_image = ImageTk.PhotoImage(Image.open("Images/login_background.jpg"))
+request_window_image_label = CTkLabel(request_window, text="Background Image", image=request_window_background_image)
+request_window_image_label.pack()
+
 # Configurations to center request_window on initial run.
 request_window.update() # Refreshes the window.
 request_window_width = request_window.winfo_width() # Retrieves the window width.
