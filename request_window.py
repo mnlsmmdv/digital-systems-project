@@ -68,27 +68,27 @@ request_window_message_entry = CTkEntry(request_window_frame, placeholder_text="
 request_window_message_entry.place(x=50, y=100)
 
 # Request window buttons (request_window_frame).
-button_one = CTkButton(request_window_frame, text="1", width=70, corner_radius=6) # Button one.
+button_one = CTkButton(request_window_frame, text="1", width=70, corner_radius=6, command=lambda: update_request_entry("1")) # Button one.
 button_one.place(x=50, y=150)
-button_two = CTkButton(request_window_frame, text="2", width=70, corner_radius=6) # Button two.
+button_two = CTkButton(request_window_frame, text="2", width=70, corner_radius=6, command=lambda: update_request_entry("2")) # Button two.
 button_two.place(x=125, y=150)
-button_three = CTkButton(request_window_frame, text="3", width=70, corner_radius=6) # Button three.
+button_three = CTkButton(request_window_frame, text="3", width=70, corner_radius=6, command=lambda: update_request_entry("3")) # Button three.
 button_three.place(x=200, y=150)
-button_four = CTkButton(request_window_frame, text="4", width=70, corner_radius=6) # Button four.
+button_four = CTkButton(request_window_frame, text="4", width=70, corner_radius=6, command=lambda: update_request_entry("4")) # Button four.
 button_four.place(x=50, y=185)
-button_five = CTkButton(request_window_frame, text="5", width=70, corner_radius=6) # Button five.
+button_five = CTkButton(request_window_frame, text="5", width=70, corner_radius=6, command=lambda: update_request_entry("5")) # Button five.
 button_five.place(x=125, y=185)
-button_six = CTkButton(request_window_frame, text="6", width=70, corner_radius=6) # Button six.
+button_six = CTkButton(request_window_frame, text="6", width=70, corner_radius=6, command=lambda: update_request_entry("6")) # Button six.
 button_six.place(x=200, y=185)
-button_seven = CTkButton(request_window_frame, text="7", width=70, corner_radius=6) # Button seven.
+button_seven = CTkButton(request_window_frame, text="7", width=70, corner_radius=6, command=lambda: update_request_entry("7")) # Button seven.
 button_seven.place(x=50, y=220)
-button_eight = CTkButton(request_window_frame, text="8", width=70, corner_radius=6) # Button eight.
+button_eight = CTkButton(request_window_frame, text="8", width=70, corner_radius=6, command=lambda: update_request_entry("8")) # Button eight.
 button_eight.place(x=125, y=220)
-button_nine = CTkButton(request_window_frame, text="9", width=70, corner_radius=6) # Button nine.
+button_nine = CTkButton(request_window_frame, text="9", width=70, corner_radius=6, command=lambda: update_request_entry("9")) # Button nine.
 button_nine.place(x=200, y=220)
 request_button = CTkButton(request_window_frame, text="Request", width=70, corner_radius=6) # Request button.
 request_button.place(x=50, y=255)
-button_zero = CTkButton(request_window_frame, text="0", width=70, corner_radius=6) # Button zero.
+button_zero = CTkButton(request_window_frame, text="0", width=70, corner_radius=6, command=lambda: update_request_entry("0")) # Button zero.
 button_zero.place(x=125, y=255)
 cancel_button = CTkButton(request_window_frame, text="Cancel", width=70, corner_radius=6, command=cancel_user_request) # Cancel button.
 cancel_button.place(x=200, y=255)
