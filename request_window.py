@@ -52,14 +52,14 @@ request_window_frame = CTkFrame(request_window_image_label, width=320, height=33
 request_window_frame.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 # Request window header label (request_window_frame).
-login_window_header_label = CTkLabel(request_window_frame, text="Request, pending payment", font=("SF Pro Display", 20))
-login_window_header_label.place(x=38, y=45)
+request_window_header_label = CTkLabel(request_window_frame, text="Request, pending payment", font=("SF Pro Display", 20))
+request_window_header_label.place(x=38, y=45)
 
 # Request window entry (request_window_frame).
 request_window_username_entry = CTkEntry(request_window_frame, width=220)
 request_window_username_entry.place(x=50, y=100)
 
-# Request window buttons (login_window_frame).
+# Request window buttons (request_window_frame).
 button_one = CTkButton(request_window_frame, text="1", width=70, corner_radius=6) # Button one.
 button_one.place(x=50, y=150)
 button_two = CTkButton(request_window_frame, text="2", width=70, corner_radius=6) # Button two.
