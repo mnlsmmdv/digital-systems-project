@@ -28,4 +28,14 @@ import subprocess
 set_appearance_mode("system")
 set_default_color_theme("blue")
 
+# Request Window configurations.
+global request_window
+request_window = CTk()
+request_window.title("Request") # Window title.
+request_window.geometry("800x608") # Window dimensions.
+#request_window.resizable(False, False) # Keeping constant window dimension size.
+
+# Running the main window event loop.
+request_window.mainloop()
+
 # PROGRAM END.
