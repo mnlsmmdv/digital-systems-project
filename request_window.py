@@ -40,6 +40,10 @@ request_window_background_image = ImageTk.PhotoImage(Image.open("Images/login_ba
 request_window_image_label = CTkLabel(request_window, text="Background Image", image=request_window_background_image)
 request_window_image_label.pack()
 
+# Request window frame.
+request_window_frame = CTkFrame(request_window_image_label, width=320, height=330, corner_radius=15)
+request_window_frame.place(relx=0.5, rely=0.5, anchor=CENTER)
+
 # Configurations to center request_window on initial run.
 request_window.update() # Refreshes the window.
 request_window_width = request_window.winfo_width() # Retrieves the window width.
