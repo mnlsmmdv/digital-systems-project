@@ -35,6 +35,11 @@ def cancel_user_request():
     # Opens the overview_window .
     subprocess.run(["python", "overview_window.py"])
 
+# This function will display the message variable values.
+def update_request_entry():
+    # Placeholder.
+    pass
+
 # Request Window configurations.
 global request_window
 request_window = CTk()
