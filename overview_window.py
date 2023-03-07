@@ -24,4 +24,8 @@ import webbrowser
 import os
 import subprocess
 
+# Setting general appearence and UI colour theme.
+set_appearance_mode("system")
+set_default_color_theme("blue")
+
 # PROGRAM END.
