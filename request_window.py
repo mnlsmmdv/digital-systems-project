@@ -42,7 +42,7 @@ def update_request_entry(input_value):
 
 # This function validates request amount is not greather than application limit.
 def validate_request_amount():
-    # Get the amount entered by the user from the message field.
+    # Retrieves amount entered by from the entry field.
     request_amount = request_entry_message.get()
 
     # Displays error popup if entry is empty and request button is clicked.
