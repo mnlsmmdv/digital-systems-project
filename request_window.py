@@ -107,7 +107,7 @@ button_eight = CTkButton(request_window_frame, text="8", width=70, corner_radius
 button_eight.place(x=125, y=220)
 button_nine = CTkButton(request_window_frame, text="9", width=70, corner_radius=6, command=lambda: update_request_entry("9")) # Button nine.
 button_nine.place(x=200, y=220)
-request_button = CTkButton(request_window_frame, text="Request", width=70, corner_radius=6) # Request button.
+request_button = CTkButton(request_window_frame, text="Request", width=70, corner_radius=6, command=validate_request_amount) # Request button.
 request_button.place(x=50, y=255)
 button_zero = CTkButton(request_window_frame, text="0", width=70, corner_radius=6, command=lambda: update_request_entry("0")) # Button zero.
 button_zero.place(x=125, y=255)
