@@ -50,7 +50,7 @@ def validate_request_amount():
         request_amount_float = float(request_amount)
         # Displays error popup if request amount is greater than 5000 and clears entry.
         if request_amount_float > 5000:
-            CTkMessagebox(title="Unauthorised Amount", message="Amount can not exceed 500!", icon="cancel", option_1="Ok")
+            CTkMessagebox(title="Unauthorised Amount", message="Amount can not exceed 5000!", icon="cancel", option_1="Ok")
             request_entry_message.set("")
         # Displays no error if request amount is not greather than 5000.
         else:
