@@ -128,7 +128,7 @@ add_message_button = CTkButton(request_window_frame, text="Add Msg", width=70, c
 add_message_button.place(x=50, y=290)
 button_decimal = CTkButton(request_window_frame, text=".", width=70, corner_radius=6, command=lambda: update_request_entry(".")) # Decimal button.
 button_decimal.place(x=125, y=290)
-clear_button = CTkButton(request_window_frame, text="Clear", width=70, corner_radius=6) # Clear button.
+clear_button = CTkButton(request_window_frame, text="Clear", width=70, corner_radius=6, command=clear_request_entry) # Clear button.
 clear_button.place(x=200, y=290)
 
 # Configurations to center request_window on initial run.
