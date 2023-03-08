@@ -67,6 +67,11 @@ def validate_request_amount():
         CTkMessagebox(title="Unauthorised Amount", message="Must be a valid amount!", icon="cancel", option_1="Ok")
         request_entry_message.set("")
 
+# This function clears the message entry field.
+def clear_request_entry():
+    # Clears the entry.
+    request_entry_message.set("")
+
 # Request Window configurations.
 global request_window
 request_window = CTk()
