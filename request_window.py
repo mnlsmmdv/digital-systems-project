@@ -40,11 +40,6 @@ def update_request_entry(input_value):
     display_message = request_entry_message.get()
     request_entry_message.set(display_message + input_value)
 
-# This function validates request amount is not greather than application limit.
-def validate_request_amount():
-    # Placeholder.
-    pass
-
 # Request Window configurations.
 global request_window
 request_window = CTk()
