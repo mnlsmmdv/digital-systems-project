@@ -44,6 +44,12 @@ def update_request_entry(input_value):
 def validate_request_amount():
     # Get the amount entered by the user from the message field.
     request_amount = request_entry_message.get()
+
+    # Displays error popup if entry is empty and request button is clicked.
+    if not request_amount:
+        # Error message.
+        CTkMessagebox(title="Unauthorised Action", message="Please enter amount!", icon="cancel", option_1="Ok")
+        return
     
     # Converting request amount to float value.
     try:
