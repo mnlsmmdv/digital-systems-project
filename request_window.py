@@ -42,8 +42,24 @@ def update_request_entry(input_value):
 
 # This function validates request amount is not greather than application limit.
 def validate_request_amount():
-    # Placeholder.
-    pass
+    # Get the amount entered by the user from the message field.
+    request_amount = request_entry_message.get()
+    
+    # Converting request amount to float value.
+    try:
+        request_amount_float = float(request_amount)
+        # Displays error popup if request amount is greater than 5000 and clears entry.
+        if request_amount_float > 5000:
+            CTkMessagebox(title="Unauthorised Amount", message="Amount can not exceed 500!", icon="cancel", option_1="Ok")
+            request_entry_message.set("")
+        # Displays no error if request amount is not greather than 5000.
+        else:
+            pass
+    # Displays error popup if float amount conversion fails.
+    except ValueError:
+        # Error message.
+        CTkMessagebox(title="Unauthorised Amount", message="Must be a valid amount!", icon="cancel", option_1="Ok")
+        request_entry_message.set("")
 
 # Request Window configurations.
 global request_window
