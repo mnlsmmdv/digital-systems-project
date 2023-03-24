@@ -30,8 +30,31 @@ set_default_color_theme("blue")
 
 # This function displays an error if user enters invalid values and clicks the "Add Msg" button.
 def display_error_add_message_button():
-    # Placeholder.
-    pass
+    # Retrieves value entered from the entry field.
+    message_entry_value = request_window_message_entry.get()
+
+    # Checks if the entry field is empty.
+    if not message_entry_value:
+        # Displays error popup if entry field is empty.
+        CTkMessagebox(title="Unauthorised Action", message="Please enter amount first!", icon="cancel", option_1="Ok")
+        return
+    
+    # Checks if entered value contains any letters.
+    contains_letters = any(i.isalpha() for i in message_entry_value)
+    contains_digits = any(i.isdigit() for i in message_entry_value)
+    contains_only_digits = all(i.isdigit() for i in message_entry_value)
+
+    # Displays an error popup if entered value contains letters.
+    if contains_letters:
+        CTkMessagebox(title="Unauthorised Action", message="Please enter amount first!", icon="cancel", option_1="Ok")
+    # Displays an error popup if entered value contains only numbers.
+    elif contains_only_digits:
+        CTkMessagebox(title="Unauthorised Action", message="Numbers only not allowed as message!", icon="cancel", option_1="Ok")
+    else:
+        return
+    
+    # Clears the entry.
+    request_entry_message.set("")
 
 # This function cancels user request and goes back to overview_window .
 def cancel_user_request():
