@@ -47,6 +47,9 @@ def display_error_add_message_button():
     # Displays an error popup if entered value contains letters.
     if contains_letters:
         CTkMessagebox(title="Unauthorised Action", message="Please enter amount first!", icon="cancel", option_1="Ok")
+    # Displays an error popup if entered value contains digits
+    elif contains_digits:
+        CTkMessagebox(title="Unauthorised Action", message="Numbers only not allowed as message!", icon="cancel", option_1="Ok")
     # Displays an error popup if entered value contains only numbers.
     elif contains_only_digits:
         CTkMessagebox(title="Unauthorised Action", message="Numbers only not allowed as message!", icon="cancel", option_1="Ok")
