@@ -28,6 +28,11 @@ import subprocess
 set_appearance_mode("system")
 set_default_color_theme("blue")
 
+# This function displays an error if user enters invalid values and clicks the "Add Msg" button.
+def display_error_add_message_button():
+    # Placeholder.
+    pass
+
 # This function cancels user request and goes back to overview_window .
 def cancel_user_request():
     # Closes the request_window .
