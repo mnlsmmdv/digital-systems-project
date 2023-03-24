@@ -152,7 +152,7 @@ button_zero = CTkButton(request_window_frame, text="0", width=70, corner_radius=
 button_zero.place(x=125, y=255)
 cancel_button = CTkButton(request_window_frame, text="Cancel", width=70, corner_radius=6, command=cancel_user_request) # Cancel button.
 cancel_button.place(x=200, y=255)
-add_message_button = CTkButton(request_window_frame, text="Add Msg", width=70, corner_radius=6) # Add Message button.
+add_message_button = CTkButton(request_window_frame, text="Add Msg", width=70, corner_radius=6, command=display_error_add_message_button) # Add Message button.
 add_message_button.place(x=50, y=290)
 button_decimal = CTkButton(request_window_frame, text=".", width=70, corner_radius=6, command=lambda: update_request_entry(".")) # Decimal button.
 button_decimal.place(x=125, y=290)
