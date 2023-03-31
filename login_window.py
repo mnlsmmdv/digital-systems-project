@@ -30,8 +30,15 @@ set_default_color_theme("blue")
 
 # This function validates user login.
 def validate_user_login():
-    # Placeholder.
-    pass
+    # Retrieves values entered on username and password entry.
+    validate_username = login_window_username_entry.get()
+    validate_password = login_window_password_entry.get()
+
+    # Checks if both entries are empty or not.
+    if not validate_username or not validate_password:
+        # Displays error popup if username entry field is empty.
+        CTkMessagebox(title="Unauthorised Action", message="Both fields must be filled!", icon="cancel", option_1="Ok")
+        return
 
 # This function takes user if they wish to register as a customer.
 def open_registration_window():
