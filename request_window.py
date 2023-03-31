@@ -161,7 +161,7 @@ button_decimal = CTkButton(request_window_frame, text=".", width=70, corner_radi
 button_decimal.place(x=125, y=290)
 clear_button = CTkButton(request_window_frame, text="Clear", width=70, corner_radius=6, command=clear_request_entry) # Clear button.
 clear_button.place(x=200, y=290)
-add_amount_button = CTkButton(request_window_frame, text="Add Amt", width=70, corner_radius=6)
+add_amount_button = CTkButton(request_window_frame, text="Add Amt", width=70, corner_radius=6) # Add Amount button.
 add_amount_button.place(x=125, y=325)
 
 # Configurations to center request_window on initial run.
