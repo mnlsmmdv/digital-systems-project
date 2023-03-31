@@ -28,8 +28,15 @@ set_default_color_theme("blue")
 
 # This function displays an error if user enters invalid values and clicks the "Add Amt" button.
 def display_error_add_amount_button():
-    # Placeholder.
-    pass
+    # Retrieves value entered from entry field.
+    request_amount = request_window_message_entry.get()
+
+    # Checks if entry field is empty.
+    if not request_amount:
+        # Displays error popup if entry field is empty.
+        CTkMessagebox(title="Unauthorised Action", message="Please enter amount first!", icon="cancel", option_1="Ok")
+        request_entry_message.set("")
+        return
 
 # This function displays an error if user enters invalid values and clicks the "Add Msg" button.
 def display_error_add_message_button():
