@@ -119,7 +119,7 @@ request_window_image_label = CTkLabel(request_window, text="Background Image", i
 request_window_image_label.pack()
 
 # Request window frame.
-request_window_frame = CTkFrame(request_window_image_label, width=320, height=350, corner_radius=15)
+request_window_frame = CTkFrame(request_window_image_label, width=320, height=370, corner_radius=15)
 request_window_frame.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 # Stores entry message.
