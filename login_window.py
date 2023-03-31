@@ -28,6 +28,11 @@ import subprocess
 set_appearance_mode("system")
 set_default_color_theme("blue")
 
+# This function validates user login.
+def validate_user_login():
+    # Placeholder.
+    pass
+
 # This function takes user if they wish to register as a customer.
 def open_registration_window():
     # Closes login_window .
