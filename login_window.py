@@ -91,7 +91,7 @@ register_button = CTkButton(login_window_frame, text="Register", width=100, corn
 register_button.place(x=50, y=240)
 
 # Login window Login button (login_window_frame).
-login_button = CTkButton(login_window_frame, text="Login", width=100, corner_radius=6)
+login_button = CTkButton(login_window_frame, text="Login", width=100, corner_radius=6, command=validate_user_login)
 login_button.place(x=170, y=240)
 
 # Images for Google and Facebook buttons.
