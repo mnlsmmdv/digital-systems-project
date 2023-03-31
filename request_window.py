@@ -37,6 +37,20 @@ def display_error_add_amount_button():
         CTkMessagebox(title="Unauthorised Action", message="Please enter amount first!", icon="cancel", option_1="Ok")
         request_entry_message.set("")
         return
+    
+    # Validates request amount and clears entry if it's correct.
+    try:
+        request_amount_float = float(request_amount)
+        if 0 < request_amount_float <= 5000:
+            request_entry_message.set("")
+        else:
+            # Displays error popup if amount exceeds 5000.
+            CTkMessagebox(title="Unauthorised Amount", message="Amount can not exceed 5000!", icon="cancel", option_1="Ok")
+            request_entry_message.set("")
+    except ValueError:
+        # Displays error popup if amount is invalid.
+        CTkMessagebox(title="Unauthorised Amount", message="Must be a valid amount!", icon="cancel", option_1="Ok")
+        request_entry_message.set("")
 
 # This function displays an error if user enters invalid values and clicks the "Add Msg" button.
 def display_error_add_message_button():
