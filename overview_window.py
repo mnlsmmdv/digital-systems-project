@@ -40,6 +40,10 @@ overview_window_background_image = ImageTk.PhotoImage(Image.open("Images/login_b
 overview_window_image_label = CTkLabel(overview_window, text="Background Image", image=overview_window_background_image)
 overview_window_image_label.pack()
 
+# Overview window frame.
+overview_window_frame = CTkFrame(overview_window_image_label, width=900, height=700, corner_radius=15)
+overview_window_frame.place(relx=0.5, rely=0.5, anchor=CENTER)
+
 # Configurations to center overview_window on initial run.
 overview_window.update() # Refreshes the window.
 overview_window_width = overview_window.winfo_width() # Retrieves the window width.
