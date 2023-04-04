@@ -35,6 +35,11 @@ overview_window.title("Overview") # Window title.
 overview_window.geometry("800x608") # Window dimensions.
 #overview_window.resizable(False, False) # Keeping constant window dimension size.
 
+# Overview window background image.
+overview_window_background_image = ImageTk.PhotoImage(Image.open("Images/login_background.jpg"))
+overview_window_image_label = CTkLabel(overview_window, text="Background Image", image=overview_window_background_image)
+overview_window_image_label.pack()
+
 # Configurations to center overview_window on initial run.
 overview_window.update() # Refreshes the window.
 overview_window_width = overview_window.winfo_width() # Retrieves the window width.
