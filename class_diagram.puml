@@ -1,0 +1,140 @@
+class login_window_py <<module>> << (M,orchid) >> #DarkSeaGreen {
+    login_button
+    login_window
+    login_window_background_image
+    login_window_facebook_button
+    login_window_facebook_button_image
+    login_window_forgot_password_label
+    login_window_frame
+    login_window_google_button
+    login_window_google_button_image
+    login_window_header_label
+    login_window_height
+    login_window_image_label
+    login_window_password_entry
+    login_window_username_entry
+    login_window_width
+    register_button
+    screen_height
+    screen_width
+    x_axis
+    y_axis
+    ---
+    login_direct_link()
+    open_registration_window()
+    validate_user_login()
+}
+
+login_window_py --> CTk : uses
+login_window_py --> CTkLabel : uses
+login_window_py --> CTkFrame : uses
+login_window_py --> CTkEntry : uses
+login_window_py --> CTkButton : uses
+login_window_py --> CTkImage : uses
+class registration_window_py <<module>> << (M,orchid) >> #DarkSeaGreen {
+    age_values
+    bank_information_frame
+    cancel_registration_button
+    country_names_UN
+    first_name_entry
+    first_name_label
+    last_name_entry
+    last_name_label
+    maldives_uk_bank_currencies
+    maldives_uk_bank_names
+    name_title
+    name_title_combobox
+    register_user_button
+    registration_user_name_entry
+    registration_user_name_label
+    registration_window
+    registration_window_background_image
+    registration_window_background_image_label
+    registration_window_height
+    registration_window_width
+    screen_height
+    screen_width
+    terms_conditions_frame
+    terms_conditions_status
+    terms_conditions_text
+    terms_conditions_text_area
+    title_names
+    user_age_combobox
+    user_age_label
+    user_bank_currency_combobox
+    user_bank_currency_label
+    user_bank_name_combobox
+    user_bank_name_label
+    user_bank_status_checkbox
+    user_bank_status_label
+    user_information_frame
+    user_nationality_combobox
+    user_nationality_label
+    user_registration_frame
+    x_axis
+    y_axis
+    ---
+    cancel_user_registration()
+    validate_age_combobox()
+    validate_bank_currency_combobox()
+    validate_bank_name_combobox()
+    validate_user_nationality_combobox()
+    validate_user_registration()
+}
+
+registration_window_py --> CTk : uses
+registration_window_py --> CTkLabel : uses
+registration_window_py --> CTkFrame : uses
+registration_window_py --> CTkEntry : uses
+registration_window_py --> CTkComboBox : uses
+registration_window_py --> CTkCheckBox : uses
+registration_window_py --> CTkTextbox : uses
+registration_window_py --> CTkButton : uses
+class request_window_py <<module>> << (M,orchid) >> #DarkSeaGreen {
+    add_amount_button
+    add_message_button
+    button_decimal
+    button_eight
+    button_five
+    button_four
+    button_nine
+    button_one
+    button_seven
+    button_six
+    button_three
+    button_two
+    button_zero
+    cancel_button
+    clear_button
+    request_button
+    request_entry_message
+    request_window
+    request_window_background_image
+    request_window_frame
+    request_window_header_label
+    request_window_height
+    request_window_image_label
+    request_window_message_entry
+    request_window_width
+    screen_height
+    screen_width
+    x_axis
+    y_axis
+    ---
+    cancel_user_request()
+    clear_request_entry()
+    display_error_add_amount_button()
+    display_error_add_message_button()
+    update_request_entry()
+    validate_request_amount()
+}
+
+request_window_py --> CTk : uses
+request_window_py --> CTkLabel : uses
+request_window_py --> CTkFrame : uses
+request_window_py --> StringVar : uses
+request_window_py --> CTkEntry : uses
+request_window_py --> CTkButton : uses
+class splash_screen_py <<module>> << (M,orchid) >> #DarkSeaGreen {
+}
+center footer Ahmed Affaan 19045165
